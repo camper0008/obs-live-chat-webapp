@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #282828;
+    color: #fff;
+    font-family: monospace;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#chatlog {
+    margin: 0;
+    white-space: pre-wrap;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #141414;
+    height: 100vh;
+    overflow-y: auto;
+    max-width: min(500px, 25vw);
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    display: block;
+    font-family: monospace;
+    background-color: #141414;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    font-size: 1.25rem;
+}
+
+input#submit {
+    padding: 0.5em 1em;
+    transition: 50ms ease-in-out background-color;
+}
+
+input#submit:hover {
+    cursor: pointer;
+    background-color: #1A1A1A;
+}
+
+input#submit:active {
+    cursor: pointer;
+    background-color: #202020;
+}
+
+p#status {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+p#status.success {
+    background-color: #AFA;
+    color: #000;
+}
+
+p#status.failure {
+    background-color: #F44;
+}
