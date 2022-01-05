@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Livechat</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <p id="chatlog"></p>
+            <div class="form-container">
+                <h1>Livechat</h1>
+                <label for="username">👤 L</label>
+                <input name="username" id="username" type="text" placeholder=". . .">
+                <p id="username-limit">0/32</p>
+                <label for="message">💬 + Ratio</label>
+                <textarea name="message" id="message" type="text" placeholder=". . ."></textarea>
+                <p id="message-limit">0/256</p>
+                <input id="submit" type="button" value="Send">
+                <p id="status"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
